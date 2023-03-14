@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "docker_instance" {
-    source = "sambcelik/docker-instance/aws"
+    source = "sambcelik/Terraform-AWS-Docker-EC2"
     key_name = "XXX"
 }
 ```
