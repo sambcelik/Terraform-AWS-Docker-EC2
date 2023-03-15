@@ -71,10 +71,3 @@ resource "aws_security_group" "tf-sec-gr" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-
-data "template_file" "userdata" {
-  template = file("${abspath(path.module)}/userdata.sh")
-  vars = {
-    server-name = var.server-name
-  }
-}
